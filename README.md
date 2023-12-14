@@ -124,6 +124,23 @@ sequenceDiagram
     main->>ServiceDevine: setRefCtrl(refctrl)
     main->>Controller: start()
 ```
+nouvelle version (A DISCUTER AVEC MARIO)
+```mermaid
+sequenceDiagram
+    participant app.IhmSimple.main()
+    create participant refCtrl
+    app.IhmSimple.main()->>refCtrl: new Controller()
+    create participant refServiceDevine
+    app.IhmSimple.main()->>refServiceDevine: new ServiceDevine()
+    app.IhmSimple.main()->>refCtrl: setRefServiceDevine(refServiceDevine)
+    create participant refView
+    app.IhmSimple.main()->>refView: new View()
+    app.IhmSimple.main()->>refCtrl: setRefView(refView)
+    app.IhmSimple.main()->>refView: setRefCtrl(refCtrl)
+    app.IhmSimple.main()->>refServiceDevine: setRefCtrl(refctrl)
+    app.IhmSimple.main()->>refCtrl: start()
+```
+
 ### ihmsimple.ctrl.Controller.start()
 Voici le diagramme de séquence de la méthode de la méthode `start()` de la classe `Controller` du package `ctrl` :
 ```mermaid
