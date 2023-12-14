@@ -1,5 +1,5 @@
 # Exercice 04 : Devine mon nombre
-## durée : 240'
+## Durée : 240'
 ## Objectifs visés :
 Maitriser les diagrammes de séquence ; Maitriser les diagrammes de classes ; Savoir se référer à la Javadoc ; Maîtrise de MVC avec Ihm simple fournie
 
