@@ -111,22 +111,6 @@ namespace services {
 Voici le diagramme de séquence de la méthode de la méthode `main()` de la classe `IhmSimple` du package `app` :
 ```mermaid
 sequenceDiagram
-    participant main
-    main->>Controller: new Controller()
-    Controller-->>main: refCtrl
-    main->>ServiceDevine: new ServiceDevine()
-    ServiceDevine-->>main: refServiceDevine
-    main->>Controller: setRefServiceDevine(refServiceDevine)
-    main->>View: new View()
-    View-->>main: refView
-    main->>Controller: setRefView(refView)
-    main->>View: setRefCtrl(refCtrl)
-    main->>ServiceDevine: setRefCtrl(refctrl)
-    main->>Controller: start()
-```
-nouvelle version (A DISCUTER AVEC MARIO)
-```mermaid
-sequenceDiagram
     participant app.IhmSimple.main()
     create participant refCtrl
     app.IhmSimple.main()->>refCtrl: new Controller()
@@ -181,5 +165,5 @@ sequenceDiagram
     end
 ```
 ## Javadoc
-Vous pouvez cliquer sur [ce lien pour obtenir la JavaDoc en HTML](javadoc/index.html) de l'application IhmSimple.
+La Javadoc se trouve directement dans les classes Java. Il ne vous reste plus qu'à remplacer les commentaires `// VOTRE CODE ICI...`
 
