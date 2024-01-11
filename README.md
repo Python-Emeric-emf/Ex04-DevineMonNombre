@@ -85,7 +85,7 @@ Controller "1" o--> View : refView
 Voici la structure des packages pour chaque classe du projet
 ```mermaid
 classDiagram
-namespace ihmsimple {
+namespace ex04_devinemonnombre {
     class app
     class views
     class ctrl
@@ -131,7 +131,7 @@ Voici le diagramme de séquence de la méthode de la méthode `start()` de la cl
 sequenceDiagram
     participant Controller.start()
     Controller.start()->>View refView: ihmStart()
-    Controller.start()->>View refView: afficherStatus("Jeu teriminé !", Color.LIGHT_GRAY)
+    Controller.start()->>View refView: afficherStatus("Jeu terminé !", Color.LIGHT_GRAY)
 ```
 ### ihmsimple.ctrl.Controller.actionDemarrerNouveauJeu()
 Voici le diagramme de séquence de la méthode de la méthode `actionDemarrerNouveauJeu()` de la classe `Controller` du package `ctrl` :
